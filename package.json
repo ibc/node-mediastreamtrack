@@ -1,7 +1,7 @@
 {
   "name": "node-mediastreamtrack",
   "version": "0.0.1",
-  "description": "W3 MediaStreamTrack interfacefor Node.js",
+  "description": "W3 MediaStreamTrack interface for Node.js",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint -c .eslintrc.js ."
