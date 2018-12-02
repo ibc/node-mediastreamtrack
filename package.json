@@ -1,18 +1,22 @@
 {
   "name": "node-mediastreamtrack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "W3 MediaStreamTrack interface for Node.js",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint -c .eslintrc.js ."
+    "lint": "eslint -c .eslintrc.js lib"
   },
   "author": "Iñaki Baz Castillo <ibc@aliax.net> (https://inakibaz.me)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibc/node-mediastreamtrack.git"
+  },
   "dependencies": {
-    "event-target-shim": "^3.0.2",
-    "randomatic": "^3.1.0"
+    "event-target-shim": "^4.0.1",
+    "randomatic": "^3.1.1"
   },
   "devDependencies": {
-    "eslint": "^5.6.0"
+    "eslint": "^5.9.0"
   }
 }
