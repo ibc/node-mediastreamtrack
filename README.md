@@ -50,12 +50,11 @@ const track = new MediaStreamTrack({ kind, id, label })
 * `id`: Track unique identificator string. If not given, a random one is internally generated.
 * `label`: Track label (string).
 
-### Properties
+### Custom methods
 
-* Setting `track.enabled = true/false` emits a custom "enable" or "disable" [Event](https://dom.spec.whatwg.org/#event).
-* `track.muted` is writable.
-* Setting `track.muted = true/false` emits "mute" or "unmute" [Event](https://dom.spec.whatwg.org/#event).
-* "ended" [Event](https://dom.spec.whatwg.org/#event) is emitted when calling  `track.stop()`.
+* `track.remoteStop()` emulates a stop generated remotely. It will fired "ended" event if not alread stopped.
+* `track.remoteMute()` emulates a mute generated remotely. It will fired "mute" event if not alread muted.
+* `track.remoteUnmute()` emulates a unmute generated remotely. It will fired "unmute" event if not alread muted.
 
 ```js
 const track = new MediaStreamTrack({ kind: 'video' });
@@ -63,7 +62,7 @@ const track = new MediaStreamTrack({ kind: 'video' });
 track.onended = () => console.log('track ended (1)');
 track.addEventListener('ended', () => console.log('track ended (2)'));
 
-track.stop();
+track.remoteStop();
 // => track ended (1)
 // => track ended (2)
 ```

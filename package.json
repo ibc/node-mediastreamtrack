@@ -1,6 +1,6 @@
 {
   "name": "node-mediastreamtrack",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "W3 MediaStreamTrack interface for Node.js",
   "main": "lib/index.js",
   "scripts": {
