@@ -1,6 +1,6 @@
 {
   "name": "node-mediastreamtrack",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "W3 MediaStreamTrack interface for Node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "url": "https://github.com/ibc/node-mediastreamtrack.git"
   },
   "dependencies": {
-    "event-target-shim": "^4.0.1",
+    "event-target-shim": "^4.0.3",
     "randomatic": "^3.1.1"
   },
   "devDependencies": {
