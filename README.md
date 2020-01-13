@@ -15,7 +15,9 @@ $ npm install node-mediastreamtrack
 ## Usage
 
 ```js
-const MediaStreamTrack = require('node-mediastreamtrack');
+const { MediaStreamTrack } = require('node-mediastreamtrack');
+// or
+import { MediaStreamTrack } from 'node-mediastreamtrack';
 
 const track = new MediaStreamTrack({ kind: 'audio' });
 
@@ -77,6 +79,13 @@ Some W3 [MediaStreamTrack](https://www.w3.org/TR/mediacapture-streams/#mediastre
 * `track.getSettings()`
 * `track.applyConstraints`
 * `track.onoverconstrained`
+
+
+## Changelog
+
+### 1.0.0
+
+* Do not export a `default` but a named `MediaStreamTrack`.
 
 
 ## Author
