@@ -1,3 +1,8 @@
+# DEPRECATED NOTICE
+
+This module is deprecated. Use the [fake-mediastreamtrack](https://www.npmjs.com/package/fake-mediastreamtrack) module instead.
+
+
 # node-mediastreamtrack
 
 W3 [MediaStreamTrack](https://www.w3.org/TR/mediacapture-streams/#mediastreamtrack) interface for Node.js.
